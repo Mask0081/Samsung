@@ -1,0 +1,36 @@
+.container{
+    height: 500px;
+    width: 500px;
+}
+.lo{
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 500ms;
+}
+@keyframes animation {
+    25%{
+        border-top: 3px solid red;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+    }
+    50%{
+        border-right: 3px solid green;
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+    }
+    75%{
+        border-right: none;
+        border-top: none;
+        border-bottom: 3px solid orangered;
+        border-left: none;
+    }
+    100%{
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 3px solid blue;
+    }
+}
